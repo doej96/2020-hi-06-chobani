@@ -5,3 +5,5 @@ font-family: 'Noto Serif', serif;
  */
 
  *{box-sizing: border-box;}
+ .w-100 {width: 100%;}
+ .wrapper {max-width: 1440px;}
