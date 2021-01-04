@@ -36,7 +36,7 @@ color: #ebe9e5;
 
  /* ********.main-wrapper******* */
  .main-wrap {position: relative;}
- .main-wrap .title-wrap {position: absolute; top: 50%; transform:translateY(-25%); padding: 0 6.75em; width: 50%;}
+ .main-wrap .title-wrap {position: absolute; top: 50%; transform:translateY(-25%); padding: 0 6.5em; width: 50%;}
  .main-wrap .title-wrap .title {font-size: 4em; line-height: 1.2;}
  .main-wrap .title-wrap .content {font-size: 1.25em; line-height: 1.2; margin: 1em 0 1.7em;}
  .main-wrap .title-wrap button {background-color: #fff; border-radius: 5%; padding: 1em 2em; border: 0; font-size: 0.875em; letter-spacing: 0.05em; transition: all .2s;}
