@@ -1,11 +1,38 @@
+/******** 전역변수 *********/
 
 
-$(window).resize(onResize).trigger("resize");
 
-
+/******** 이벤트 등록 *********/
+$(document).ready(onReady);
 new WOW().init();
 
+$('.navi').mouseenter(onMouseEnter);
+$('.navi').mouseleave(onMouseLeave);
 
-function onResize() {
-	
+$('.fa-search').click(onClickSearch);
+// $(window).resize(onResize).trigger("resize");
+
+
+/******** 이벤트 콜백 *********/
+function onReady() {
+	$('.main-wrap').hide().fadeIn();
 }
+
+function onMouseEnter() {
+	$(this).find('.sub-navi').stop().slideDown(300);
+}
+
+function onMouseLeave() {
+	$(this).find('.sub-navi').stop().slideUp(300);
+}
+
+function onClickSearch() {
+	$(this).parent().find('.navi').animate({opacity: '0', left: "-100px"},800);
+	$(this).hide();
+	$('.search').animate({opacity: '1', left: "350px"},800);
+}
+
+/******** 사용자 함수 *********/
+
+
+
