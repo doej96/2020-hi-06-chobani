@@ -5,7 +5,6 @@ font-family: 'Noto Serif', serif;
 
 color: #1a3c34;
 color: #ff5e30;
-color: #ebe9e5;
  */
 
  html,body {font-family: 'Noto Serif', serif; color: #1a3c34; background-color: #f4f3f0;}
@@ -20,10 +19,11 @@ color: #ebe9e5;
  .m-wrapper {max-width: 1440px; margin: auto;}
  .wrapper {max-width: 1376px; margin: auto;}
 
- .text-wrap {text-align: center; flex: 50% 0 0; padding: 0 4em; line-height: 1.7; font-size: 0.875em; letter-spacing: 0.2px;}
- .text-wrap h4.sub-title {color: #0071ce; font-family: 'Noto Sans', sans-serif; font-size: 0.9em;}
- .text-wrap h3.title {font-size: 3em; line-height: 1.2; margin: 1em 0 0.5em;}
-  button {background-color: #e7e4d3; color: #1a3c34; border-radius: 3px; padding: 1em 1.7em; border: 0; font-size: 0.875em; letter-spacing: 0.05em; transition: all .2s; font-size: 0.875em; margin-top: 3em;}
+ .text-wrap {text-align: center; flex: 50% 0 0; padding: 0 4em;}
+  h4.sub-title {color: #0071ce; font-family: 'Noto Sans', sans-serif; font-weight: bold; font-size: 0.875em;}
+  h3.title {font-size: 3em; line-height: 1.2; margin: 1em 0 0.5em;}
+  p.content {line-height: 1.7; font-size: 0.875em; letter-spacing: 0.2px;}
+  button {background-color: #e7e4d3; color: #1a3c34; border-radius: 3px; padding: 1em 1.7em; border: 0; font-size: 0.875em; letter-spacing: 0.05em; transition: all .2s; font-size: 0.875em; margin-top: 2em;}
   button:hover {background-color: #1a3c34; color: #f9f9f9;}
 
 
@@ -65,6 +65,14 @@ color: #ebe9e5;
  .main-wrap .title-wrap button:hover {background-color: rgba(255,255,255,0.85);}
  
  /* ********.new-wrapper******* */
- .new-wrapper {margin-top: 6em; display: flex; align-items: center;}
- .new-wrapper .img-wrap {flex: 50% 0 0; padding: 7em; box-sizing: border-box;}
- .text-wrap p.content-1 {margin-top: 2em;}
+ .new-wrap {margin: 6em 0; display: flex; align-items: center;}
+ .new-wrap .img-wrap {flex: 50% 0 0; padding: 0 7em; box-sizing: border-box;}
+ .text-wrap p.content-1 {margin-top: 2em; font-size: 0.875em;}
+ 
+ /* ********.best-wrapper******* */
+ .best-wrapper {text-align: center; background-color: #ebe9e5; padding: 6em 0 4em;}
+ .best-wrapper h4 {margin-bottom: 4em;}
+ .best-wrapper button {margin-top: 3em;}
+ .best-wrapper .best-wrap {display: flex; justify-content: space-evenly; align-items: flex-end;}
+ .best-wrap .best {flex: 20% 0 0;}
+ .best-wrap .best p {margin-top: 2em;}
