@@ -10,6 +10,7 @@ $('.navi').mouseenter(onMouseEnter);
 $('.navi').mouseleave(onMouseLeave);
 
 $('.fa-search').click(onClickSearch);
+$('.fa-times').click(onClickClose);
 // $(window).resize(onResize).trigger("resize");
 
 
@@ -29,7 +30,15 @@ function onMouseLeave() {
 function onClickSearch() {
 	$(this).parent().find('.navi').animate({opacity: '0', left: "-100px"},800);
 	$(this).hide();
-	$('.search').animate({opacity: '1', left: "350px"},800);
+	$('.search').animate({opacity: '1'},800);
+	$('.navi-right').addClass('active');
+}
+
+function onClickClose() {
+	$('.navi').animate({opacity: '1', left: "0"},500);
+	$('.fa-search').show();
+	$('.search').animate({opacity: '0'},500);
+	$('.navi-right').removeClass('active');
 }
 
 /******** 사용자 함수 *********/
