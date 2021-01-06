@@ -23,8 +23,8 @@ color: #ff5e30;
   h4.sub-title {color: #0071ce; font-family: 'Noto Sans', sans-serif; font-weight: bold; font-size: 0.875em;}
   h3.title {font-size: 3em; line-height: 1.2; margin: 1em 0 0.5em;}
   p.content {line-height: 1.7; font-size: 0.875em; letter-spacing: 0.2px;}
-  button {background-color: #e7e4d3; color: #1a3c34; border-radius: 3px; padding: 1em 1.7em; border: 0; font-size: 0.875em; letter-spacing: 0.05em; transition: all .2s; font-size: 0.875em; margin-top: 2em;}
-  button:hover {background-color: #1a3c34; color: #f9f9f9;}
+  button {background-color: #1a3c34; color: #f9f9f9; border-radius: 3px; padding: 1em 1.7em; border: 0; font-size: 0.875em; letter-spacing: 0.05em; transition: all .2s; font-size: 0.875em; margin-top: 2em;}
+  button:hover {background-color: #e7e4d3; color: #1a3c34;}
 
 
  /* ********.header-wrapper******* */
@@ -66,7 +66,7 @@ color: #ff5e30;
  
  /* ********.new-wrapper******* */
  .new-wrap {margin: 4em 0; display: flex; align-items: center;}
- .new-wrap .img-wrap {flex: 50% 0 0; padding: 0 7em; box-sizing: border-box;}
+ .new-wrap .img-wrap {flex: 50% 0 0; padding: 0 7em;}
  .text-wrap p.content-1 {margin-top: 2em; font-size: 0.875em;}
  
  /* ********.best-wrapper******* */
@@ -76,3 +76,20 @@ color: #ff5e30;
  .best-wrapper .best-wrap {display: flex; justify-content: space-evenly; align-items: flex-end;}
  .best-wrap .best {flex: 20% 0 0;}
  .best-wrap .best p {margin-top: 2em;}
+ 
+ /* ********.products-wrapper******* */
+ .prd-wrap {margin-top: 4em; display: flex; align-items: center;}
+ .prd-wrap .img-wrap {flex: 50% 0 0; padding: 0 7em;}
+ .prd-wrap:last-child .img-wrap {order: -1;}
+  
+ /* ********.slide-wrapper******* */
+ .slide-wrapper {margin-top: 10em; text-align: center; position: relative;}
+ .swiper-wrapper {max-height: 380px;}
+ .swiper-slide .box {background-color: #1a3c34; position: relative;}
+ .swiper-slide .box img {transition: all 0.4s;}
+ .swiper-slide .box p {position: absolute; top: 50%; left: 50%; transform: translateX(-50%); color: #f9f9f9; font-size: 1.5em; font-weight: lighter; line-height: 1.4; opacity: 0; transition: all 0.5s; letter-spacing: 0.05em;}
+ .swiper-slide .box.active p {opacity: 1; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+ .swiper-slide .box.active img {opacity: 0.1;}
+ .pager-wrap {position: absolute; left: 50%; transform: translateX(-50%); display: flex; margin-top: 1.5em;}
+ .swiper-pagination-bullet {width: 15px; height: 15px; border-radius: 50%; margin-left: 0.7em; background-color: #000;}
+ .swiper-pagination-bullet-active {background-color: #17332c;}

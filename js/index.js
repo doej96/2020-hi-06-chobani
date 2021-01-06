@@ -13,8 +13,19 @@ $('.fa-search').click(onClickSearch);
 $('.fa-times').click(onClickClose);
 // $(window).resize(onResize).trigger("resize");
 
+$('.swiper-slide .box').mouseenter(onEnterSlide);
+$('.swiper-slide .box').mouseleave(onLeaveSlide);
+
 
 /******** 이벤트 콜백 *********/
+function onEnterSlide() {
+	$(this).addClass('active')
+}
+
+function onLeaveSlide() {
+	$(this).removeClass('active')
+}
+
 function onReady() {
 	$('.main-wrap').hide().fadeIn();
 }
@@ -42,6 +53,21 @@ function onClickClose() {
 }
 
 /******** 사용자 함수 *********/
-
+var swiper = new Swiper('.swiper-container', {
+	slidesPerView: 1,
+	spaceBetween: 10,
+	loop: true,
+	// init: false,
+	pagination: {
+	  el: '.pager-wrap',
+	  clickable: true,
+	},
+	breakpoints: {
+	  640: {
+		slidesPerView: 3,
+		spaceBetween: 50,
+	  },
+	}
+  });
 
 
