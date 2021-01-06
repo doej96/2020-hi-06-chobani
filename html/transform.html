@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/all.min.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.wrapper {max-width: 1200px; margin: auto; background-color: aquamarine; display: flex; justify-content: flex-end; position: relative; overflow: hidden;}
+		.box-wrap {width: 30%; border: 1px solid blue; padding: 0.5em; transform: translateX(50%); transition: all 0.75s;}
+		.box-wrap.active {transform: translateX(0);}
+		.box-wrap .box {padding: 1em; border: 1px solid red; width: 30%; margin-left: auto; margin-right: 30%; transform: translateX(100%); transition: all 0.5s;}
+		.box-wrap.active .box {transform: translateX(0);}
+		.bt {position: absolute; top: 1.25em; right: 1.25em;}
+	</style>
+	<script src="../js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="box-wrap">
+			<div class="box"></div>
+		</div>
+		<div class="bt fa fa-times"></div>
+	</div>
+
+	<script>
+		$(".bt").click(function(){
+			$(".box-wrap").addClass('active');
+		});
+	</script>
+</body>
+</html>
