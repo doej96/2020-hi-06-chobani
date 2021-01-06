@@ -31,14 +31,14 @@ function onClickSearch() {
 	$(this).parent().find('.navi').animate({opacity: '0', left: "-100px"},800);
 	$(this).hide();
 	$('.search').animate({opacity: '1'},800);
-	$('.navi-right').addClass('active');
+	$('.navi-right-cont').addClass('active');
 }
 
 function onClickClose() {
 	$('.navi').animate({opacity: '1', left: "0"},500);
 	$('.fa-search').show();
 	$('.search').animate({opacity: '0'},500);
-	$('.navi-right').removeClass('active');
+	$('.navi-right-cont').removeClass('active');
 }
 
 /******** 사용자 함수 *********/

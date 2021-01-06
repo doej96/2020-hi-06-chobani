@@ -28,23 +28,24 @@ color: #ff5e30;
 
 
  /* ********.header-wrapper******* */
- .navi-wrapper {background-color: #fff; position: fixed; padding: 1em 3em; width: 100%; z-index: 9; overflow: hidden;}
+ .navi-wrapper {background-color: #fff; position: fixed; padding: 1em 3em; width: 100%; z-index: 9;}
  .navi-wrap {display: flex; align-items: center; justify-content: space-between; color: #3b695d; font-size: 0.95em;}
  .navi-wrap .navi-left {display: flex; align-items: center;}
  .navi-wrap h1 img {width: 165px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
- .navi-wrap .navi-right {display: flex; align-items: center; transform: translate(300px); transition: all 0.5s;}
- .navi-wrap .navi-right.active {transform: translate(0);}
+ .navi-wrap .navi-right {overflow: hidden;}
+ .navi-wrap .navi-right-cont {display: flex; align-items: center; transform: translate(290px); transition: all 0.5s;}
+ .navi-wrap .navi-right-cont.active {transform: translate(0);}
  .navi-wrap .line{width: 2px; height: 60px; background-color: #eee; margin-right: 2em;}
  .navi-wrap .navi-right i {cursor: pointer; font-size: 1.125em;}
  .navi-wrap .navi {position: relative;}
- .navi-wrap .navi > a {margin-right: 2em; transition: all .2s;}
+ .navi-wrap .navi > a {margin-right: 1.7em; transition: all .2s;}
  .navi-wrap .navi:hover > a{color: #ff5e30;}
 
  .navi-right .search {opacity: 0;}
  .navi-right .search input {margin-right: 2em; border: 1px solid #ccc; padding: 1em 1.5em;}
  .navi-right .search i {font-size: 1.5em; font-weight: lighter;}
 
- .sub-navi {background-color: #fff; width: 225px; position: absolute; top: 30px; left: -20px; padding: 1.5em; box-shadow: 0 -1px 2px rgba(199, 199, 199, 0.7); display: none;}
+ .sub-navi {background-color: #fff; width: 225px; position: absolute; top: 30px; left: -20px; padding: 1.5em; box-shadow: 0 -1px 2px rgba(199, 199, 199, 0.7); display: none; z-index: 10;}
  .sub-navi ul.featured {border-bottom: 1px solid #eee; padding-bottom: 2.5em; margin-bottom: 2em;}
  .sub-navi .title {color: #579385; padding-bottom: 1em;}
  .sub-navi li {display: flex; justify-content: space-between; align-items: center;}
