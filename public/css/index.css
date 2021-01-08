@@ -130,7 +130,6 @@ color: #ff5e30;
     .navi-wrap .navi-left {order: 1; margin-left: auto;}
     .navi-wrap h1 img {position: relative; transform: translate(0); top: 0; left: 0; width: 120px;}
     .navi-wrap .navi-right {display: none;}
-    .navi-wrap .line {display: block;}
 }
 @media screen and (max-width: 991px) {
 	
