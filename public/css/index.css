@@ -91,7 +91,7 @@ color: #ff5e30;
  .swiper-slide {position: relative;}
  .swiper-slide .box {background-color: #1a3c34;}
  .swiper-slide .box img {transition: all 0.4s;}
- .swiper-slide .box span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -15%); color: #f9f9f9; font-size: 1.5em; font-weight: lighter; line-height: 1.4; opacity: 0; transition: all 0.7s; letter-spacing: 0.05em;}
+ .swiper-slide .box span {position: absolute; width: 90%; top: 50%; left: 50%; transform: translate(-50%, -15%); color: #f9f9f9; font-size: 1.125em; font-weight: lighter; line-height: 1.4; opacity: 0; transition: all 0.7s; letter-spacing: 0.05em;}
  .swiper-slide .box.active span {opacity: 1; top: 50%; left: 50%; transform: translate(-50%, -50%);}
  .swiper-slide .box.active img {opacity: 0.1;}
  .pager-wrap {position: absolute; left: 50%; transform: translateX(-50%); display: flex; margin-top: 1.5em;}
@@ -139,12 +139,14 @@ color: #ff5e30;
     .navi-wrap .navi-right {display: none;}
     .mo-navi {display: flex; align-items: center; order: 2;}
     .cb-wrap input[type="checkbox"] + label {font-size: 0.875em;}
+    .swiper-slide .box span {font-size: 0.875em;}
 }
 @media screen and (max-width: 991px) {
 	.main-wrap .title-wrap {left: 50%; top: 50%; width: 70%; transform: translate(-50%, -50%); padding: 0; text-align: center;}
     .main-wrap .title-wrap .title {font-size: 3em;}
     .main-wrap .title-wrap .content {margin:  2em 0 2.125em;}
     h3.title {margin: 0.5em 0 0.5em; font-size: 2em;}
+    .swiper-slide .box span {font-size: 1em;}
     footer .f-menu {max-width: 240px;}
     footer .f-mail .email-box {margin: 1em 0;}
     footer .f-mail .email-box input {padding: 0.75em;}
@@ -167,6 +169,8 @@ color: #ff5e30;
 
     .prd-wrap {justify-content: center;}
     .prd-wrap .img-wrap {flex: 60% 0 0; padding: 0 2em; order: -1;}
+
+    .swiper-slide .box span {font-size: 2em;}
 
     footer .f-menu {display: none;}
     .f-menu .logo {display: none;}
