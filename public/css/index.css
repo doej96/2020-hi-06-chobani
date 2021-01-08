@@ -185,9 +185,9 @@ color: #ff5e30;
 @media screen and (max-width: 575px) {
     .copy-wrap .sns i {margin-left: 1.25em; font-size: 1.5em;}
     footer .f-mail {flex: 100% 0 0;}
-    footer .f-mail .email-box {display: flex; flex-direction: column; width: 100%;}
+    footer .f-mail .email-box {display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%;}
     footer .f-mail .email-box input {width: 90%; box-sizing: border-box;}
     .f-mail .email {margin: 0.5em 0;}
     .f-mail input.email::placeholder {text-align: center;}
-    .cb-wrap input[type="checkbox"] + label {width: 90%;}
+    .cb-wrap input[type="checkbox"] + label {width: 90%; left: 50%; transform: translateX(-50%);}
 }
