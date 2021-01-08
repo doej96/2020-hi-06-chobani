@@ -13,8 +13,7 @@ $('.fa-search').click(onClickSearch);
 $('.fa-times').click(onClickClose);
 // $(window).resize(onResize).trigger("resize");
 
-$('.swiper-slide .box').mouseenter(onEnterSlide);
-$('.swiper-slide .box').mouseleave(onLeaveSlide);
+
 
 
 /******** 이벤트 콜백 *********/
@@ -55,8 +54,9 @@ function onClickClose() {
 /******** 사용자 함수 *********/
 var swiper = new Swiper('.swiper-container', {
 	slidesPerView: 1,
-	spaceBetween: 10,
+	spaceBetween: 20,
 	loop: true,
+	centeredSlides: true,
 	// init: false,
 	pagination: {
 	  el: '.pager-wrap',
@@ -64,10 +64,12 @@ var swiper = new Swiper('.swiper-container', {
 	},
 	breakpoints: {
 	  640: {
-		slidesPerView: 3,
+		slidesPerView: 4,
 		spaceBetween: 50,
 	  },
 	}
-  });
+});
+$('.swiper-slide .box').mouseenter(onEnterSlide);
+$('.swiper-slide .box').mouseleave(onLeaveSlide);
 
 
