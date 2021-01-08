@@ -88,21 +88,21 @@ color: #ff5e30;
  .swiper-slide {position: relative;}
  .swiper-slide .box {background-color: #1a3c34;}
  .swiper-slide .box img {transition: all 0.4s;}
- .swiper-slide .box span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #f9f9f9; font-size: 1.5em; font-weight: lighter; line-height: 1.4; opacity: 1; transition: all 0.5s; letter-spacing: 0.05em;}
- /* .swiper-slide .box.active p {opacity: 1; top: 50%; left: 50%; transform: translate(-50%, -50%);} */
+ .swiper-slide .box span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%); color: #f9f9f9; font-size: 1.5em; font-weight: lighter; line-height: 1.4; opacity: 0; transition: all 0.5s; letter-spacing: 0.05em;}
+ .swiper-slide .box.active span {opacity: 1; top: 50%; left: 50%; transform: translate(-50%, -50%);}
  .swiper-slide .box.active img {opacity: 0.1;}
  .pager-wrap {position: absolute; left: 50%; transform: translateX(-50%); display: flex; margin-top: 1.5em;}
  .swiper-pagination-bullet {width: 15px; height: 15px; border-radius: 50%; margin-left: 0.7em; background-color: #000;}
  .swiper-pagination-bullet-active {background-color: #17332c;}
   
  /* ********footer******* */
- footer {margin-top: 10em; background-color: #1a3c34; color: #f9f9f9; padding: 3em 3em 1em;}
+ footer.wrapper {margin-top: 10em; background-color: #1a3c34; color: #f9f9f9; padding: 3em 3em 1em; box-sizing: border-box;}
  footer .cont-wrap {display: flex; justify-content: space-between;}
- footer .f-menu {flex: 60% 0 0;}
- .f-menu .logo {width: 190px;}
+ footer .f-menu {flex: 55% 0 0;}
+ .f-menu .logo {width: 170px;}
  .f-menu ul.menu {display: flex; flex-wrap: wrap; padding-top: 3em;}
  .f-menu ul.menu li {margin-right: 2em;}
- footer .f-mail {flex: 30% 0 0; padding-top: 2em;}
+ footer .f-mail {flex: 35% 0 0; padding-top: 2em;}
  footer .f-mail .email-box {margin: 1.5em 0; display: flex;}
  footer .f-mail .email-box input {border: 1px solid rgba(228, 228, 228, 0.6); padding: 1em; background-color: transparent; color: #f9f9f9; display: inline-block;}
  .f-mail .email {font-weight: bolder; color: rgba(228, 228, 228, 0.6); border-radius: 2px 0 0 2px;}
