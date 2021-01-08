@@ -189,5 +189,5 @@ color: #ff5e30;
     footer .f-mail .email-box input {width: 90%; box-sizing: border-box;}
     .f-mail .email {margin: 0.5em 0;}
     .f-mail input.email::placeholder {text-align: center;}
-    .cb-wrap input[type="checkbox"] + label {width: 90%; left: 50%; transform: translateX(-50%);}
+    .cb-wrap input[type="checkbox"] + label {width: 95%; left: 50%; transform: translateX(-50%);}
 }
