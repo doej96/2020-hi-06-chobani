@@ -85,10 +85,10 @@ color: #ff5e30;
  /* ********.slide-wrapper******* */
  .slide-wrapper {margin: 10em 0; text-align: center; position: relative;}
  /* .swiper-wrapper {max-height: 380px;} */
- .swiper-slide {position: relative; margin: -2% 0; }
+ .swiper-slide {position: relative;}
  .swiper-slide .box {background-color: #1a3c34;}
  .swiper-slide .box img {transition: all 0.4s;}
- .swiper-slide .box span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%); color: #f9f9f9; font-size: 1.5em; font-weight: lighter; line-height: 1.4; opacity: 0; transition: all 0.5s; letter-spacing: 0.05em; border: 2px solid red;}
+ .swiper-slide .box span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -15%); color: #f9f9f9; font-size: 1.5em; font-weight: lighter; line-height: 1.4; opacity: 0; transition: all 0.7s; letter-spacing: 0.05em;}
  .swiper-slide .box.active span {opacity: 1; top: 50%; left: 50%; transform: translate(-50%, -50%);}
  .swiper-slide .box.active img {opacity: 0.1;}
  .pager-wrap {position: absolute; left: 50%; transform: translateX(-50%); display: flex; margin-top: 1.5em;}
