@@ -108,7 +108,8 @@ color: #ff5e30;
  footer .f-mail {flex: 35% 0 0; padding-top: 2em;}
  footer .f-mail .email-box {margin: 1.5em 0; display: flex;}
  footer .f-mail .email-box input {border: 1px solid rgba(228, 228, 228, 0.6); padding: 1em; background-color: transparent; color: #f9f9f9; display: inline-block;}
- .f-mail .email {font-weight: bolder; color: rgba(228, 228, 228, 0.6); border-radius: 2px 0 0 2px;}
+ .f-mail .email {border-radius: 2px 0 0 2px;}
+ .f-mail input.email::placeholder {color: rgba(228, 228, 228, 0.6); font-size: 0.9em;}
  .f-mail .bt-email {font-size: 0.9em; transition: all 0.2s; border-radius: 0 2px 2px 0;}
  .f-mail .bt-email:hover {background-color: #f9f9f9; color: #1a3c34;}
 
@@ -117,13 +118,14 @@ color: #ff5e30;
  .cb-wrap input[type="checkbox"] + label::before {content: ""; display: inline-block; width: 15px; height: 15px; background-color: transparent; border: 1px solid #f9f9f9; border-radius: 2px; margin-right: 0.5em;}
  .cb-wrap input[type="checkbox"]:checked + label::before {content: "\2713"; font-size: 0.875em; font-weight: bolder; text-align: center;}
 
-.copy-wrap {margin-top: 4em; border-top: 1px solid rgba(228, 228, 228, 0.6); padding-top: 1.5em; font-family: 'Noto Sans', sans-serif; color: rgba(228, 228, 228, 0.6);}
+.copy-wrap {margin-top: 4em; border-top: 1px solid rgba(228, 228, 228, 0.6); padding-top: 1.5em; font-family: 'Noto Sans', sans-serif; color: rgba(228, 228, 228, 0.6); position: relative;}
 .copy-wrap .terms {display: flex; flex-wrap: wrap;}
 .copy-wrap .terms li {margin-right: 1em; border-right: 1px solid rgba(228, 228, 228, 0.6); padding-right: 1em; font-size: 0.875em; margin-bottom: 0.5em;}
 .copy-wrap .terms li:last-child {border-right: 0;}
-.copy-wrap .copy {padding: 1em 0 0.5em; display: flex; justify-content: space-between; align-items: center;}
-.copy-wrap .copy .copyright {font-size: 0.875em;}
-.copy-wrap .copy .sns i {margin-left: 0.25em; font-size: 1.125em;}
+.copy-wrap .copyright {font-size: 0.875em; padding: 1em 0 0.5em;}
+.copy-wrap .sns {position: absolute; right: 0; bottom: 0;}
+.copy-wrap .sns i {margin-left: 0.25em; font-size: 1.125em;}
+.copy-wrap .sns .fa-facebook-official {margin-left: 0;}
 
 
 
@@ -166,8 +168,22 @@ color: #ff5e30;
     .prd-wrap {justify-content: center;}
     .prd-wrap .img-wrap {flex: 60% 0 0; padding: 0 2em; order: -1;}
 
-    
+    footer .f-menu {display: none;}
+    .f-menu .logo {display: none;}
+    footer .f-mail {flex: 0 0 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+    .copy-wrap {margin-top: 2.5em; border-top: 0; text-align: center;}
+    .copy-wrap .terms {display: block; padding-top: 1.5em; z-index: 5;}
+    .copy-wrap .terms li {margin-right: 0; border-right: 0; padding-right: 0; margin-bottom: 1.5em; font-weight: bold;}
+    .copy-wrap .copyright {font-size: 0.75em;}
+    .copy-wrap .sns {left: 50%; top: 0; transform: translateX(-50%); height: 30px; width: 100%;}
+    .copy-wrap .sns i {margin-left: 1.5em; font-size: 1.125em;}
 }
 @media screen and (max-width: 575px) {
-	
+    .copy-wrap .sns i {margin-left: 1.25em; font-size: 1.5em;}
+    footer .f-mail {flex: 100% 0 0;}
+    footer .f-mail .email-box {display: flex; flex-direction: column; width: 100%;}
+    footer .f-mail .email-box input {width: 90%; box-sizing: border-box;}
+    .f-mail .email {margin: 0.5em 0;}
+    .f-mail input.email::placeholder {text-align: center;}
+    .cb-wrap input[type="checkbox"] + label {width: 90%;}
 }
