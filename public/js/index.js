@@ -30,6 +30,7 @@ function onReady() {
 }
 
 function onMouseEnter() {
+	if ($(window).width() > 1199)
 	$(this).find('.sub-navi').stop().slideDown(300);
 }
 
@@ -63,7 +64,12 @@ var swiper = new Swiper('.swiper-container', {
 	  clickable: true,
 	},
 	breakpoints: {
-	  640: {
+	  576: {slidesPerView: 1},
+	  786: {
+		slidesPerView: 3,
+		spaceBetween: 30,
+	  },
+	  992: {
 		slidesPerView: 4,
 		spaceBetween: 50,
 	  },
