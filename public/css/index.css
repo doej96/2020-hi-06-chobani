@@ -26,7 +26,8 @@ color: #ff5e30;
   button {background-color: #1a3c34; color: #f9f9f9; border-radius: 3px; padding: 1em 1.7em; border: 0; font-size: 0.875em; letter-spacing: 0.05em; transition: all .2s; font-size: 0.875em; margin-top: 2em;}
   button:hover {background-color: #e7e4d3; color: #1a3c34;}
   .line{width: 2px; height: 60px; background-color: #eee; margin-right: 2em;}
-
+  .search input {margin-right: 2em; border: 1px solid #ccc; padding: 1em 1.5em;}
+  .search i {font-size: 1.5em; font-weight: lighter;}
 
  /* ********.header-wrapper******* */
  .navi-wrapper {background-color: #fff; position: fixed; padding: 1em 3em; width: 100%; z-index: 9;}
@@ -42,8 +43,6 @@ color: #ff5e30;
  .navi-wrap .navi:hover > a{color: #ff5e30;}
 
  .navi-right .search {opacity: 0;}
- .navi-right .search input {margin-right: 2em; border: 1px solid #ccc; padding: 1em 1.5em;}
- .navi-right .search i {font-size: 1.5em; font-weight: lighter;}
 
  .mo-navi {display: none;}
  .mo-navi i {font-size: 1.25em; cursor: pointer;}
@@ -128,12 +127,32 @@ color: #ff5e30;
 .copy-wrap .sns .fa-facebook-official {margin-left: 0;}
  
  /* ********.modal-container******* */
- .modal-container {background-color: #f9f9f9; position: fixed; width: 100%; height: 100vh; z-index: 100; top: 0; left: 0;}
- .mo-wrapper {width: 80%; margin: auto;}
- .modal-logo {position: relative; border-bottom: 1px solid #eee; height: 85px;}
- .modal-logo > div:first-child {width: 160px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+ .modal-container {background-color: #f9f9f9; position: fixed; width: 100%; height: 100vh; z-index: 50; top: 0; left: 100%;}
+ .modal-logo {position: relative; border-bottom: 1px solid #ddd; height: 85px;}
+ .modal-logo i.fa-arrow-left {position: absolute; left: 0; top: 50%; transform: translateY(-50%); margin-left: 2em; font-size: 1.125em; display: none; cursor: pointer;}
+ .modal-logo .logo-box {width: 160px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
  .modal-logo .close {position: absolute; right: 0; top: 50%; transform: translateY(-50%); display: flex; align-items: center; margin-right: 2em;}
+ .modal-logo .close i {cursor: pointer; font-size: 1.125em;}
 
+ .modal-search {border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; padding: 0.25em 1.5em;}
+ .modal-search input {flex: 70% 1 0; border: 0; background-color: transparent; font-family: 'Noto Serif', sans-serif; font-size: 1.125em;}
+ .modal-search i {margin-right: 1em; font-size: 1.25em; cursor: pointer;}
+
+ .mo-wrapper {width: 80%; margin: auto;}
+ .modal-navi-wrapdepth1 {padding: 0 2.75em;}
+ .modal-navi-wrap ul.modal-navi {margin-top: 2em;}
+ .modal-navi-wrap ul.modal-navi > li > a {font-size: 2.05em; padding: 0.5em 0; display: inline-block; display: flex; align-items: center; justify-content: space-between;}
+ .modal-navi-wrap ul.modal-navi > li > a i {font-size: 0.875em; display: block;}
+ .modal-navi-wrap ul.etc {margin-top: 0.5em;}
+ .modal-navi-wrap ul.etc > li {padding: 0.5em 0; font-family: 'Noto Sans', sans-serif;}
+ 
+ .depth2 {z-index: 60; background-color: #f4f3ef; position: fixed; width: 100%; height: 100vh; top: 84px; left: 100%; overflow-y: auto;}
+ .depth2 .depth2-tit {position: fixed; width: 100%; font-family: 'Noto Sans', sans-serif; padding: 1.5em; font-size: 1.125em; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #ddd; background-color: #f4f3ef;}
+ .depth2 > ul.featured {margin-top: 4em; padding-bottom: 3em; border-bottom: 1px solid #ddd;}
+ .depth2 > ul {padding: 0 4em; padding-top: 2em;}
+ .depth2 > ul > .title {font-size: 2.05em; padding: 0.5em 0; color: rgba(71, 113, 96, 0.7);}
+ .depth2 > ul > li > a {font-family: 'Noto Sans', sans-serif; font-size: 1.125em; padding: 0.875em 0; display: block;}
+ .depth2.mo-impact > ul {margin-top: 4em;}
 
 
 

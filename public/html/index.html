@@ -116,7 +116,7 @@
                         </div>
                         <div class="line"></div>
                         <i class="fa fa-search" aria-hidden="true"></i>
-                        <div class="search">
+                        <div class="search navi-search">
                             <input type="text" name="search" placeholder="What are you looking for?">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
@@ -285,79 +285,86 @@
 
     <!-- .modal-container -->
     <div class="modal-container">
-        <div class="modal-navi">
-            <div class="modal-logo">
-                <div><img src="../img/logo.png" alt="로고" class="w-100"></div>
-                <div class="close">
-                    <div class="line"></div>
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                </div>
+        <div class="modal-logo">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <div class="logo-box"><img src="../img/logo.png" alt="로고" class="w-100"></div>
+            <div class="close">
+                <div class="line"></div>
+                <i class="fa fa-times" aria-hidden="true"></i>
             </div>
+        </div>
+        <div class="depth1">
             <div class="mo-wrapper">
-                <div class="modal-search">
-                    <input type="text" name="search" placeholder="What are you looking for?">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-                <div class="depth depth1">
-                    <ul class="depth1-navi">
-                        <li><a href="#">Home</a></li>
-                        <li>
-                            <a href="#">Products</a>
-                            <div class="depth depth2">
-                                <div class="depth2-tit">Products</div>
-                                <ul class="featured">
-                                    <li class="title">Featured</li>
-                                    <li><a href="#">New! Chobani® Probiotic</a></li>
-                                    <li><a href="#">New! Chobani® Complete</a></li>
-                                </ul>
-                                <ul class="products">
-                                    <li class="title">All Products</li>
-                                    <li><a href="#">Complete</a></li>
-                                    <li><a href="#">Oat-Based</a></li>
-                                    <li><a href="#">Coffee Creamer</a></li>
-                                    <li><a href="#">Less Sugar</a></li>
-                                    <li><a href="#">Plain</a></li>
-                                    <li><a href="#">Fruit on the Bottom</a></li>
-                                    <li><a href="#">Blended</a></li>
-                                    <li><a href="#">Creamy Blended</a></li>
-                                    <li><a href="#">Probiotic</a></li>
-                                    <li><a href="#">Flip®</a></li>
-                                    <li><a href="#">Oatmeal on the Bottom</a></li>
-                                    <li><a href="#">Chobani® Coconut</a></li>
-                                    <li><a href="#">Limited Batch</a></li>
-                                    <li><a href="#">Little Chobani™ Probiotic</a></li>
-                                    <li><a href="#">Overview</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">Recipes</a></li>
-                        <li>
-                            <a href="#">Impact</a>
-                            <div class="depth depth2">
-                                <div class="depth2-tit">Impact</div>
-                                <ul>
-                                    <li><a href="#">Environmental Wellness</a></li>
-                                    <li><a href="#">Diversity & Inclusion</a></li>
-                                    <li><a href="#">Nutritional Wellness</a></li>
-                                    <li><a href="#">Social Wellness</a></li>
-                                    <li><a href="#">Chobani Incubator</a></li>
-                                    <li><a href="#">Milk Matters™</a></li>
-                                    <li><a href="#">Overview</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">Our Café</a></li>
-                        <li><a href="#">Where to Buy</a></li>
-                    </ul>
-                    <ul class="etc">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Customer care</a></li>
-                        <li><a href="#">Foodservice</a></li>
-                        <li><a href="#">Chobani® Mexico</a></li>
-                    </ul>
-                </div>
+                    <div class="search modal-search">
+                        <input type="text" name="search" placeholder="What are you looking for?">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="modal-navi-wrap">
+                        <ul class="modal-navi">
+                            <li><a href="#">Home</a></li>
+                            <li class="depth">
+                                <a href="#">
+                                    Products
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <div class="depth2 mo-products">
+                                    <div class="depth2-tit">Products</div>
+                                    <ul class="featured mo-wrapper">
+                                        <li class="title">Featured</li>
+                                        <li><a href="#">New! Chobani® Probiotic</a></li>
+                                        <li><a href="#">New! Chobani® Complete</a></li>
+                                    </ul>
+                                    <ul class="products mo-wrapper">
+                                        <li class="title">All Products</li>
+                                        <li><a href="#">Complete</a></li>
+                                        <li><a href="#">Oat-Based</a></li>
+                                        <li><a href="#">Coffee Creamer</a></li>
+                                        <li><a href="#">Less Sugar</a></li>
+                                        <li><a href="#">Plain</a></li>
+                                        <li><a href="#">Fruit on the Bottom</a></li>
+                                        <li><a href="#">Blended</a></li>
+                                        <li><a href="#">Creamy Blended</a></li>
+                                        <li><a href="#">Probiotic</a></li>
+                                        <li><a href="#">Flip®</a></li>
+                                        <li><a href="#">Oatmeal on the Bottom</a></li>
+                                        <li><a href="#">Chobani® Coconut</a></li>
+                                        <li><a href="#">Limited Batch</a></li>
+                                        <li><a href="#">Little Chobani™ Probiotic</a></li>
+                                        <li><a href="#">Overview</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Recipes</a></li>
+                            <li class="depth">
+                                <a href="#">
+                                    Impact
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <div class="depth2 mo-impact">
+                                    <div class="depth2-tit">Impact</div>
+                                    <ul class="mo-wrapper">
+                                        <li><a href="#">Environmental Wellness</a></li>
+                                        <li><a href="#">Diversity & Inclusion</a></li>
+                                        <li><a href="#">Nutritional Wellness</a></li>
+                                        <li><a href="#">Social Wellness</a></li>
+                                        <li><a href="#">Chobani Incubator</a></li>
+                                        <li><a href="#">Milk Matters™</a></li>
+                                        <li><a href="#">Overview</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Our Café</a></li>
+                            <li><a href="#">Where to Buy</a></li>
+                        </ul>
+                        <ul class="etc">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Customer care</a></li>
+                                <li><a href="#">Foodservice</a></li>
+                                <li><a href="#">Chobani® Mexico</a></li>
+                        </ul>
+                    </div>
             </div>
         </div>
     </div>

@@ -10,13 +10,37 @@ $('.navi').mouseenter(onMouseEnter);
 $('.navi').mouseleave(onMouseLeave);
 
 $('.fa-search').click(onClickSearch);
-$('.fa-times').click(onClickClose);
-// $(window).resize(onResize).trigger("resize");
+$('.search .fa-times').click(onClickClose);
 
+$(window).resize(onResize);
 
+$('.fa-bars').click(onShowModal);
+$('.close .fa-times').click(onHideModal);
+$('.depth').click(onShowDepth2);
+$('i.fa-arrow-left').click(onShowDepth1);
 
 
 /******** 이벤트 콜백 *********/
+function onShowDepth2() {
+	$(this).find('.depth2').animate({left: "0"},600);
+	$('i.fa-arrow-left').css("display", "block");
+}
+
+function onShowDepth1() {
+	$('.depth2').animate({left: "100%"},600);
+	$('i.fa-arrow-left').css("display", "none");
+	$(this).hide();
+}
+
+function onShowModal() {
+	$('.modal-container').animate({left: "0"},600);
+	$('i.fa-arrow-left').hide();
+}
+
+function onHideModal() {
+	$('.modal-container, .depth2').animate({left: "100%"},600);
+}
+
 function onEnterSlide() {
 	$(this).addClass('active')
 }
