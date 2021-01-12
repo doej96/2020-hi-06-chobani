@@ -1,5 +1,10 @@
 /******** 전역설정 *********/
-
+/**
+ * ? animate말고 css transtion active로 줘보기
+ * ? 사이즈 늘어나면 없어지기
+ * ? 모바일 네비
+ * ? 스크롤
+ */
 
 
 /******** 이벤트 등록 *********/
@@ -11,8 +16,6 @@ $('.navi').mouseleave(onMouseLeave);
 
 $('.fa-search').click(onClickSearch);
 $('.search .fa-times').click(onClickClose);
-
-$(window).resize(onResize);
 
 $('.fa-bars').click(onShowModal);
 $('.close .fa-times').click(onHideModal);
