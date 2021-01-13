@@ -1,7 +1,5 @@
 /******** 전역설정 *********/
 /**
- * ? animate말고 css transtion active로 줘보기
- * ? 사이즈 늘어나면 없어지기
  * ? 모바일 네비
  * ? 스크롤
  */
@@ -10,6 +8,7 @@
 /******** 이벤트 등록 *********/
 $(document).ready(onReady);
 new WOW().init();
+$(window).resize(onResize);
 
 $('.navi').mouseenter(onMouseEnter);
 $('.navi').mouseleave(onMouseLeave);
@@ -24,24 +23,28 @@ $('i.fa-arrow-left').click(onShowDepth1);
 
 
 /******** 이벤트 콜백 *********/
+function onResize() {
+	if ($(window).width() > 1199) $('.modal-container, .depth2').removeClass('active');
+}
+
 function onShowDepth2() {
-	$(this).find('.depth2').animate({left: "0"},600);
+	$(this).find('.depth2').addClass('active');
 	$('i.fa-arrow-left').css("display", "block");
 }
 
 function onShowDepth1() {
-	$('.depth2').animate({left: "100%"},600);
+	$('.depth2').removeClass('active');
 	$('i.fa-arrow-left').css("display", "none");
 	$(this).hide();
 }
 
 function onShowModal() {
-	$('.modal-container').animate({left: "0"},600);
+	$('.modal-container').addClass('active');
 	$('i.fa-arrow-left').hide();
 }
 
 function onHideModal() {
-	$('.modal-container, .depth2').animate({left: "100%"},600);
+	$('.modal-container, .depth2').removeClass('active');
 }
 
 function onEnterSlide() {

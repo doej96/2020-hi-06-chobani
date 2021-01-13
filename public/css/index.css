@@ -127,7 +127,8 @@ color: #ff5e30;
 .copy-wrap .sns .fa-facebook-official {margin-left: 0;}
  
  /* ********.modal-container******* */
- .modal-container {background-color: #f9f9f9; position: fixed; width: 100%; height: 100vh; z-index: 50; top: 0; left: 100%;}
+ .modal-container {background-color: #f9f9f9; position: fixed; width: 100%; height: 100vh; z-index: 50; top: 0; left: 100%; transition: all 0.6s;}
+ .modal-container.active {left: 0;}
  .modal-logo {position: relative; border-bottom: 1px solid #ddd; height: 85px;}
  .modal-logo i.fa-arrow-left {position: absolute; left: 0; top: 50%; transform: translateY(-50%); margin-left: 2em; font-size: 1.125em; display: none; cursor: pointer;}
  .modal-logo .logo-box {width: 160px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
@@ -146,7 +147,8 @@ color: #ff5e30;
  .modal-navi-wrap ul.etc {margin-top: 0.5em;}
  .modal-navi-wrap ul.etc > li {padding: 0.5em 0; font-family: 'Noto Sans', sans-serif;}
  
- .depth2 {z-index: 60; background-color: #f4f3ef; position: fixed; width: 100%; height: 100vh; top: 84px; left: 100%; overflow-y: auto;}
+ .depth2 {z-index: 60; background-color: #f4f3ef; position: fixed; width: 100%; height: 100vh; top: 84px; left: 100%; overflow-y: auto; transition: all .6s;}
+ .depth2.active {left: 0;}
  .depth2 .depth2-tit {position: fixed; width: 100%; font-family: 'Noto Sans', sans-serif; padding: 1.5em; font-size: 1.125em; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #ddd; background-color: #f4f3ef;}
  .depth2 > ul.featured {margin-top: 4em; padding-bottom: 3em; border-bottom: 1px solid #ddd;}
  .depth2 > ul {padding: 0 4em; padding-top: 2em;}
