@@ -182,7 +182,7 @@ color: #ff5e30;
     .navi-wrap {justify-content: center;}
     .navi-wrap .navi-left {display: none;} 
 	.navi-wrap .navi-right {display: none;} 
-    .mo-navi {display: none;}
+    .mo-navi {position: absolute; top: 0; right: 1.5em;}
 
     .text-wrap {flex: 100% 0 0;}
     .new-wrap .img-wrap {flex: 100% 0 0; order: -1; margin-bottom: 3em;}
