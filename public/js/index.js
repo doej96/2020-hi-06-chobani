@@ -1,9 +1,4 @@
 /******** 전역설정 *********/
-/**
- * ? 모바일 네비
- * ? 스크롤
- */
-
 
 /******** 이벤트 등록 *********/
 $(document).ready(onReady);
@@ -39,11 +34,13 @@ function onShowDepth1() {
 }
 
 function onShowModal() {
+	$('html,body').css({overflow: "hidden"})
 	$('.modal-container').addClass('active');
 	$('i.fa-arrow-left').hide();
 }
 
 function onHideModal() {
+	$('html,body').css({overflow: "visible"})
 	$('.modal-container, .depth2').removeClass('active');
 }
 
