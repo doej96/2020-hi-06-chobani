@@ -39,11 +39,13 @@ function onShowDepth1() {
 }
 
 function onShowModal() {
+	$('html, body').css({'height': '100vh', 'overflow': 'hidden'});
 	$('.modal-container').addClass('active');
 	$('i.fa-arrow-left').hide();
 }
 
 function onHideModal() {
+	$('html, body').css({'height': 'auto', 'overflow': 'visible'});
 	$('.modal-container, .depth2').removeClass('active');
 }
 
